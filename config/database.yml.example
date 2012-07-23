@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: rails_blank_app_development
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: rails_blank_app_test
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: rails_blank_app_production
+  pool: 5

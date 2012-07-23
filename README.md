@@ -9,10 +9,5 @@ I use this app with [this script](https://gist.github.com/3166714) to create new
 Rails applications.
 
 This is an adapted version of the [Blank Slate
-app](https://github.com/foca/blank_slate_rails_app) of
-[foca](https://github.com/foca). Thanks to him for this great idea!
-
-Setup
----
-
-TODO.
+app](https://github.com/foca/blank_slate_rails_app). Thanks to
+[foca](https://github.com/foca) for this great idea!

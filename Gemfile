@@ -25,4 +25,6 @@ group :development do
   gem "guard"
   gem "ruby_gntp"
   gem "guard-ctags-bundler"
+  gem "guard-livereload"
+  gem "rack-livereload"
 end

@@ -9,6 +9,7 @@ Installation
 * create the dev database: `bundle exec rake db:create`
 * load the database schema: `bundle exec rake db:schema:load`
 * seed the database: `bundle exec rake db:seed`
+* launch LiveReload and add the application folder if you want app asset changes apply live in your browser
 
 Deployment
 ---

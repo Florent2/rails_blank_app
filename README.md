@@ -27,3 +27,5 @@ This app has the following customizations:
 * [quiet_assets](https://github.com/evrone/quiet_assets) to mute assets pipeline log messages
 * [sextant](https://github.com/schneems/sextant) to show routes in the browser (quicker than `rake routes`)
 * [guard-ctags-bundler](https://github.com/guard/guard-ctags-bundler) to automatically update ctags for projet files and gems from project's bundle
+* application is configured to not generate stylesheet, javascript and helper
+  file when scaffolding a resource

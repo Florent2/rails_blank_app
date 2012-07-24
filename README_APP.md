@@ -28,6 +28,9 @@ easier for the other developers
 * use `TODO`, `FIXME` and `OPTIMIZE` to anotate the code if needed
 * use `rake notes` to list those notes
 * use `lll { '@var'}` to have a nice debugging output of `@var`
+* JavaScript assets are concatenated in development mode to speed up things,
+but you can add `jsdebug=true` to your URL to have them unpacked to ease
+debugging
 
 Tests
 ---

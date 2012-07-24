@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.1)
     arel (3.0.2)
+    awesome_print (1.0.2)
     builder (3.0.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -72,6 +73,7 @@ GEM
       rb-fchange (~> 0.0.5)
       rb-fsevent (~> 0.9.1)
       rb-inotify (~> 0.8.8)
+    lll (1.14.1)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -141,12 +143,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   coffee-rails (~> 3.2.1)
   guard
   guard-ctags-bundler
   guard-livereload
   haml-rails
   jquery-rails
+  lll
   pg
   quiet_assets
   rack-livereload

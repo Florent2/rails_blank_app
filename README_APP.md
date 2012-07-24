@@ -26,6 +26,7 @@ easier for the other developers
 `http://localhost:3000/rails/routes` (it is quicker)
 * use `TODO`, `FIXME` and `OPTIMIZE` to anotate the code if needed
 * use `rake notes` to list those notes
+* use `lll { '@var'}` to have a nice debugging output of `@var`
 
 Tests
 ---

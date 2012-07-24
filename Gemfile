@@ -6,6 +6,7 @@ gem "rails", "3.2.6"
 
 # backend
 gem "pg"
+gem "lll"
 
 # front-end
 gem "jquery-rails"
@@ -20,6 +21,7 @@ group :assets do
 end
 
 group :development do
+  gem "awesome_print"
   gem "quiet_assets"
   gem "sextant"
   gem "guard"

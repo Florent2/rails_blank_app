@@ -29,3 +29,5 @@ This app has the following customizations:
 * [guard-ctags-bundler](https://github.com/guard/guard-ctags-bundler) to automatically update ctags for projet files and gems from project's bundle
 * application is configured to not generate stylesheet, javascript and helper
   file when scaffolding a resource
+* [pry-rails](https://github.com/rweng/pry-rails) to have `rails console` to
+  open pry

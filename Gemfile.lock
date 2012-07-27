@@ -58,6 +58,8 @@ GEM
       em-websocket (>= 0.2.0)
       guard (>= 1.1.0)
       multi_json (~> 1.0)
+    guard-rspec (1.1.0)
+      guard (>= 1.1)
     haml (3.1.6)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -171,6 +173,7 @@ DEPENDENCIES
   guard
   guard-ctags-bundler
   guard-livereload
+  guard-rspec
   haml-rails
   jquery-rails
   lll

@@ -29,6 +29,7 @@ group :development do
   gem "guard-ctags-bundler"
   gem "guard-livereload"
   gem "rack-livereload"
+  gem "guard-rspec"
   gem "pry-rails"
 end
 

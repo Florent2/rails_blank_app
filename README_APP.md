@@ -37,3 +37,4 @@ Tests
 
 * running tests: `bundle exec rspec spec`
   * make sure the test db is up-to-date with `bundle exec rake db:test:prepare`
+* to run a single test, just add `:focus`: `it "is ...", :focus do ... end`

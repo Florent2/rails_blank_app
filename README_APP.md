@@ -35,4 +35,5 @@ debugging
 Tests
 ---
 
-TODO
+* running tests: `bundle exec rspec spec`
+  * make sure the test db is up-to-date with `bundle exec rake db:test:prepare`

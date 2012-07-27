@@ -70,6 +70,10 @@ module RailsBlankApp
       g.stylesheets false
       g.helper false
       g.javascripts false
+      g.test_framework :rspec
+      g.view_specs false
+      g.controller_specs false
+      g.routing_specs false
     end
   end
 end

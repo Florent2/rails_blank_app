@@ -31,3 +31,7 @@ group :development do
   gem "rack-livereload"
   gem "pry-rails"
 end
+
+group :test do
+  gem "rspec-rails"
+end

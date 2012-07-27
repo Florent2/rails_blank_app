@@ -31,3 +31,7 @@ This app has the following customizations:
   file when scaffolding a resource
 * [pry-rails](https://github.com/rweng/pry-rails) to have `rails console` to
   open pry
+
+### For testing
+* [rspec-rails](https://github.com/rspec/rspec-rails), without routing,
+  controller and views tests

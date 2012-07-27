@@ -30,6 +30,8 @@ group :development do
   gem "guard-livereload"
   gem "rack-livereload"
   gem "guard-rspec"
+  gem "spork-rails"
+  gem "guard-spork"
   gem "pry-rails"
 end
 

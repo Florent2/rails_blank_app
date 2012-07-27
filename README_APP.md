@@ -9,6 +9,7 @@ Installation
 * create the dev database: `bundle exec rake db:create`
 * load the database schema: `bundle exec rake db:schema:load`
 * seed the database: `bundle exec rake db:seed`
+* run `bundle exec Guard` to ease some aspects of development and testing (optional)
 * launch LiveReload and add the application folder if you want app asset changes apply live in your browser
 
 Deployment
@@ -35,6 +36,8 @@ debugging
 Tests
 ---
 
+* if you had ran `bundle exec guard` tests will be automatically ran
 * running tests: `bundle exec rspec spec`
   * make sure the test db is up-to-date with `bundle exec rake db:test:prepare`
 * to run a single test, just add `:focus`: `it "is ...", :focus do ... end`
+*

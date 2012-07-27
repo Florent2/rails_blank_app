@@ -25,7 +25,7 @@ file the creation of example instances of this model, it will make life much
 easier for the other developers
 * instead of using `bundle exec rake db:routes` you can go to
 `http://localhost:3000/rails/routes` (it is quicker)
-* use `TODO`, `FIXME` and `OPTIMIZE` to anotate the code if needed
+* use `TODO`, `FIXME` and `OPTIMIZE` to annotate the code if needed
 * use `rake notes` to list those notes
 * use `lll { '@var'}` to have a nice debugging output of `@var`
 * JavaScript assets are concatenated in development mode to speed up things,

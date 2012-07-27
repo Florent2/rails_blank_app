@@ -33,8 +33,10 @@ group :development do
   gem "spork-rails"
   gem "guard-spork"
   gem "pry-rails"
+  gem "growl-rspec"
 end
 
 group :test do
   gem "rspec-rails"
+  gem "growl-rspec"
 end

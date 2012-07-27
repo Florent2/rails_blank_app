@@ -33,5 +33,6 @@ This app has the following customizations:
   open pry
 
 ### For testing
-* [rspec-rails](https://github.com/rspec/rspec-rails), without routing,
-  controller and views tests
+* [rspec-rails](https://github.com/rspec/rspec-rails), without routing, controller and views tests
+* [spork](https://github.com/sporkrb/spork) to avoid rails initialization on each test suite run
+* [growl-rspec](https://github.com/dpree/growl-rspec) to see RSpec test results in growl notifications

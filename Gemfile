@@ -39,4 +39,5 @@ end
 group :test do
   gem "rspec-rails"
   gem "growl-rspec"
+  gem "capybara"
 end

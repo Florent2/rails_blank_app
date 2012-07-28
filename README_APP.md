@@ -36,8 +36,14 @@ debugging
 Tests
 ---
 
-* if you had ran `bundle exec guard` tests will be automatically ran
-* running tests: `bundle exec rspec spec`
+* if you had ran `bundle exec guard` tests will be automatically ran (for some
+unknown reason integration tests are not run by default by Guard, so they
+should be ran manually)
+* else manually run tests with: `bundle exec rspec spec`
   * make sure the test db is up-to-date with `bundle exec rake db:test:prepare`
 * to run a single test, just add `:focus`: `it "is ...", :focus do ... end`
-*
+* see [rspec-rails](https://github.com/rspec/rspec-rails) and
+[capybara](https://github.com/jnicklas/capybara)
+README files to see examples of specs
+* integration tests use Capybara and go to `spec/integration`
+* if used, request tests should go to `spec/requests` (see [this post](http://blog.plataformatec.com.br/2012/06/improving-the-integration-between-capybara-and-rspec/) for a discussion)

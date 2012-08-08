@@ -22,8 +22,10 @@ Customizations
 This app has the following customizations:
 
 * a [README boilerplate](https://github.com/Florent2/rails_blank_app/blob/master/README_APP.md) with installation, deployement, development and test sections. On installation it replaces the README.md file you are currently reading
-* [Haml](http://haml.info/) as the templating engine for HTML
-* an application layout in Haml and some layout helpers (copied from [nifty_generators](https://github.com/ryanb/nifty-generators))
+* [Haml](http://haml.info/) as the templating engine for HTML and an
+  application layout in Haml with some layout helpers (copied from
+[nifty_generators](https://github.com/ryanb/nifty-generators))
+* PostgreSQL is the selected database
 
 ### For Development
 
@@ -32,10 +34,10 @@ This app has the following customizations:
 * [quiet_assets](https://github.com/evrone/quiet_assets) to mute assets pipeline log messages
 * [sextant](https://github.com/schneems/sextant) to show routes in the browser (quicker than `rake routes`)
 * [guard-ctags-bundler](https://github.com/guard/guard-ctags-bundler) to automatically update ctags for projet files and gems from project's bundle
-* application is configured to not generate stylesheet, javascript and helper
-  file when scaffolding a resource
 * [pry-rails](https://github.com/rweng/pry-rails) to have `rails console` to
   open pry
+* application is configured to not generate stylesheet, javascript and helper
+  file when scaffolding a resource
 
 ### For testing
 * [rspec-rails](https://github.com/rspec/rspec-rails), with generators only for models and requests specs

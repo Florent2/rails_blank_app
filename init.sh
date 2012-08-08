@@ -66,6 +66,9 @@ change_rails_app_secret
 echo "- Setting the right README"
 mv README_APP.md README.md
 
+echo "- Creating the database.yml config file"
+cp config/database.yml.example config/database.yml
+
 echo "- Initializing the git repository"
 (git init; git add .; git commit -m "Initial commit") &>/dev/null
 

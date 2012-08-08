@@ -26,6 +26,7 @@ This app has the following customizations:
   application layout in Haml with some layout helpers (copied from
 [nifty_generators](https://github.com/ryanb/nifty-generators))
 * PostgreSQL is the selected database
+* `rails.png` and `index.html` are removed
 
 ### For Development
 

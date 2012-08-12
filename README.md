@@ -25,6 +25,7 @@ This app has the following customizations:
 * [Haml](http://haml.info/) as the templating engine for HTML and an
   application layout in Haml with some layout helpers (copied from
 [nifty_generators](https://github.com/ryanb/nifty-generators))
+* a `PagesController` with a `home` view to which points the root route
 * PostgreSQL is the selected database
 * `rails.png` and `index.html` are removed
 

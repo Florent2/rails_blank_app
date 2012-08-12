@@ -22,6 +22,8 @@ Customizations
 This app has the following customizations:
 
 * a [README boilerplate](https://github.com/Florent2/rails_blank_app/blob/master/README_APP.md) with installation, deployement, development and test sections. On installation it replaces the README.md file you are currently reading
+* [Twitter Bootstrap](http://twitter.github.com/bootstrap/) for the base design,
+ installed through [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass)
 * [Haml](http://haml.info/) as the templating engine for HTML and an
   application layout in Haml with some layout helpers (copied from
 [nifty_generators](https://github.com/ryanb/nifty-generators))

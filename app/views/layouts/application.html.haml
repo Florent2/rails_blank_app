@@ -4,17 +4,28 @@
   %head
     %title
       = content_for?(:title) ? yield(:title) : "RailsBlankApp"
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
     = stylesheet_link_tag "application", media: "all"
     = csrf_meta_tag
     = yield :head
 
   %body
-    - flash.each do |name, msg|
-      = content_tag :div, msg, id: "flash_#{name}"
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          = link_to "RailsBlankApp", root_path, class: "brand"
+          .nav-collapse
+            %ul.nav
+              %li.active= link_to "Home", root_path
 
-    - if show_title?
-      %h1= yield :title
+    .container-fluid
+      .row-fluid
+        - flash.each do |name, msg|
+          = content_tag :div, msg, id: "flash_#{name}"
 
-    = yield
+        - if show_title?
+          %h1= yield :title
+
+        = yield
 
     = javascript_include_tag "application", debug: Rails.env.development? && params[:jsdebug]

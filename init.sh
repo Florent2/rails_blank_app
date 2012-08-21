@@ -60,6 +60,9 @@ rm -rf .git
 echo "- Renaming the app to \"${app_name}\""
 rename_rails_app "RailsBlankApp" "$app_name"
 
+echo "- Installing gems"
+bundle
+
 echo "- Changing the app secret"
 change_rails_app_secret
 

@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+
+require "fileutils"
+require "pathname"
+
+def replace_in_file file_name, string_or_regexp, new_string
+  file_content     = File.read file_name
+  new_file_content = file_content.gsub string_or_regexp, new_string
+  File.open(file_name, "w") { |file| file.write new_file_content }
+end
+
+def replace_in_all_files old_string, new_string
+  Dir.glob("**/*").each do |file_name|
+    replace_in_file(file_name, old_string, new_string) if File.file? file_name
+  end
+end
+
+app_path = Pathname.new(__FILE__).expand_path.parent.parent
+Dir.chdir app_path
+
+FileUtils.rm_rf ".git"
+
+new_app_name = app_path.basename.to_s
+underscored_new_app_name = new_app_name.gsub(/(.)([A-Z])/, '\1_\2').downcase
+
+puts "Renaming the app to '#{new_app_name}'..."
+replace_in_all_files "RailsBlankApp", new_app_name
+replace_in_all_files "rails_blank_app", underscored_new_app_name
+
+puts "Changing Rails app secret..."
+new_secret = `rake secret`.chomp
+replace_in_file 'config/initializers/secret_token.rb', /'.+'/, "'#{new_secret}'"
+
+puts "Setting the right README.md file..."
+FileUtils.mv "README_APP.md", "README.md"
+
+puts "Creating the config/database.yml file..."
+FileUtils.cp "config/database.yml.example", "config/database.yml"
+
+puts "Initializing the git repository..."
+`git init; git add .; git commit -m "Initial commit"`
+
+puts "Everything is ready :)"

@@ -21,7 +21,7 @@ How to use
 Make sure the app name you provide is CamelCased.
 
     $ git clone https://github.com/Florent2/rails_blank_app YourAppName
-    $ YourAppName/init.sh
+    $ YourAppName/script/init
 
 Customizations
 ---

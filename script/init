@@ -37,6 +37,9 @@ FileUtils.mv "README_APP.md", "README.md"
 puts "Creating the config/database.yml file..."
 FileUtils.cp "config/database.yml.example", "config/database.yml"
 
+puts "Removing this init script..."
+FileUtils.rm "script/init"
+
 puts "Initializing the git repository..."
 `git init; git add .; git commit -m "Initial commit"`
 

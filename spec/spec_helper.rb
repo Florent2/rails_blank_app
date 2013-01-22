@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'spork'
-#uncomment the following line to use spork with the debugger
+#uncomment the following line to use spork with ruby-debug
 #require 'spork/ext/ruby-debug'
 
 Spork.prefork do

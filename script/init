@@ -43,4 +43,29 @@ FileUtils.rm "script/init"
 puts "Initializing the git repository..."
 `git init; git add .; git commit -m "Initial commit"`
 
+puts "Adding a git pre-commit hook..."
+pre_commit_script_path = ".git/hooks/pre-commit"
+pre_commit_script = %q[#!/usr/bin/env ruby
+if `grep -rls ":focus" spec/` != ""
+  puts "\e\[31mCommit aborted because you left a :focus statement in spec file(s)\e\[0m"
+  puts `grep -rls ":focus" spec/`
+  exit 1
+end
+
+if `grep -rls "debugger" app/ lib/ extra/ spec/` != ""
+  puts "\e\[31mCommit aborted because you left a debugger statement in file(s)\e\[0m"
+  puts `grep -rls "debugger" app/ config/ lib/ spec/`
+  exit 1
+end
+
+if `egrep -rls "^<<<<<<< |^>>>>>>> |^=======$" app/ lib/ extra/ config/ db/ spec/ | xargs file | egrep 'script|text'` != ""
+  puts "\e\[31mCommit aborted because you left git failed merged markup in some files\e\[0m"
+  puts `egrep -rls "^<<<<<<< |^>>>>>>> |^=======$" app/ config/ db/ lib/ spec/ | xargs file | egrep 'script|text' | awk -F: '{print $1}'`
+  exit 1
+end
+]
+File.open(pre_commit_script_path, "w") { |f| f.write pre_commit_script }
+File.chmod(0777, pre_commit_script_path)
+
+
 puts "Everything is ready :)"

@@ -44,6 +44,7 @@ FileUtils.rm "script/init"
 puts "Initializing the git repository..."
 `git init; git add .; git commit -m "Initial commit"`
 
+# from http://rubypond.com/blog/slaying-dragons-git-bash-ruby
 puts "Adding a git pre-commit hook..."
 pre_commit_script_path = ".git/hooks/pre-commit"
 pre_commit_script = %q[#!/usr/bin/env ruby

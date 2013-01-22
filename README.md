@@ -18,10 +18,8 @@ for their own application template, I stole good ideas from them. Check
 How to use
 ---
 
-Make sure the app name you provide is CamelCased.
-
-    $ git clone https://github.com/Florent2/rails_blank_app YourAppName
-    $ YourAppName/script/init
+    $ git clone https://github.com/Florent2/rails_blank_app your_app_name
+    $ your_app_name/script/init
 
 Customizations
 ---

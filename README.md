@@ -48,6 +48,8 @@ This app has the following customizations:
   file when scaffolding a resource
 * a pre commit hook which aborts a commit if there is a `:focus` or `debugger`
   statement in the specs or code, or left git failed merge markup
+* a [Consular](https://github.com/achiu/consular) script is automatically
+  created if Consular is used on the machine
 
 ### For testing
 * [rspec-rails](https://github.com/rspec/rspec-rails), with generators only for models and requests specs

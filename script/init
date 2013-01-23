@@ -73,7 +73,7 @@ consular_dir    = "#{ENV['HOME']}/.config/consular"
 consular_script = consular_dir + '/rails_blank_app.term'
 if File.directory? consular_dir
   if File.exists? consular_script
-    app_consular_script = consular_dir + '/' + app_name + '.iterm'
+    app_consular_script = consular_dir + '/' + app_name + '.term'
     FileUtils.cp consular_script, app_consular_script
     replace_in_file app_consular_script, "rails_blank_app", app_name
   else

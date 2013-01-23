@@ -28,9 +28,10 @@ puts "Renaming the app to '#{camel_cased_app_name}'..."
 replace_in_all_files "RailsBlankApp",   camel_cased_app_name
 replace_in_all_files "rails_blank_app", underscored_app_name
 
-puts "Changing Rails app secret..."
-new_secret = `rake secret`.chomp
-replace_in_file 'config/initializers/secret_token.rb', /'.+'/, "'#{new_secret}'"
+puts "Generating Rails app secret..."
+`gem install dotenv`
+secret = `rake secret`.chomp
+replace_in_file '.env', 'please_fill_in', secret
 
 puts "Setting the right README.md file..."
 FileUtils.mv "README_APP.md", "README.md"
@@ -73,6 +74,7 @@ consular_dir    = "#{ENV['HOME']}/.config/consular"
 consular_script = consular_dir + '/rails_blank_app.term'
 if File.directory? consular_dir
   if File.exists? consular_script
+    puts "Creating a Consular script for the app..."
     app_consular_script = consular_dir + '/' + app_name + '.term'
     FileUtils.cp consular_script, app_consular_script
     replace_in_file app_consular_script, "rails_blank_app", app_name

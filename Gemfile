@@ -21,6 +21,11 @@ group :assets do
   gem "bootstrap-sass"
 end
 
+group :development, :test do
+  gem "growl-rspec"
+  gem "dotenv"
+end
+
 group :development do
   gem "awesome_print"
   gem "quiet_assets"
@@ -34,7 +39,6 @@ group :development do
   gem "spork-rails"
   gem "guard-spork"
   gem "pry-rails"
-  gem "growl-rspec"
 end
 
 group :test do

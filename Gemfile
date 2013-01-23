@@ -22,7 +22,7 @@ group :assets do
 end
 
 group :development, :test do
-  gem "growl-rspec"
+  gem "minitest-rails"
   gem "dotenv"
 end
 
@@ -35,14 +35,11 @@ group :development do
   gem "guard-ctags-bundler"
   gem "guard-livereload"
   gem "rack-livereload"
-  gem "guard-rspec"
   gem "spork-rails"
   gem "guard-spork"
   gem "pry-rails"
 end
 
 group :test do
-  gem "rspec-rails"
-  gem "growl-rspec"
   gem "capybara"
 end

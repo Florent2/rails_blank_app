@@ -7,6 +7,7 @@ gem "rails", "3.2.8"
 # backend
 gem "pg"
 gem "lll"
+gem "better_logging"
 
 # front-end
 gem "jquery-rails"
@@ -38,6 +39,7 @@ group :development do
   gem "spork-rails"
   gem "guard-spork"
   gem "pry-rails"
+  gem "better_errors"
 end
 
 group :test do

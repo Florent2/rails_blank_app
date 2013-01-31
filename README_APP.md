@@ -6,6 +6,7 @@ Installation
 * install the gems: `bundle`
 * copy `config/database.yml.example` to `config/database.yml`
 * adapt the settings in `config/database.yml` if needed
+* check `.env` to see if there is any variable to set
 * create the dev database: `bundle exec rake db:create`
 * load the database schema: `bundle exec rake db:schema:load`
 * seed the database: `bundle exec rake db:seed`

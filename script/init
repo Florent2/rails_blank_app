@@ -30,6 +30,7 @@ replace_in_all_files "rails_blank_app", underscored_app_name
 
 puts "Generating Rails app secret..."
 `gem install dotenv`
+`cp .env.example .env`
 secret = `rake secret`.chomp
 replace_in_file '.env', 'please_fill_in', secret
 

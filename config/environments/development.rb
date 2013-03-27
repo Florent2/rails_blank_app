@@ -36,4 +36,7 @@ RailsBlankApp::Application.configure do
   config.assets.debug = true
 
   config.middleware.insert_before(Rack::Lock, Rack::LiveReload)
+
+  # rotate the log files every 5 megabytes and leave only the three most recent log files
+  config.logger = Logger.new(Rails.root.join("log",Rails.env + ".log"),3,5*1024*1024)
 end

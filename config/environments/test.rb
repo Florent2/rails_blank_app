@@ -34,4 +34,7 @@ RailsBlankApp::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # rotate the log files every 5 megabytes and leave only the three most recent log files
+  config.logger = Logger.new(Rails.root.join("log",Rails.env + ".log"),3,5*1024*1024)
 end

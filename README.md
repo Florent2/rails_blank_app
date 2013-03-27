@@ -50,9 +50,11 @@ This app has the following customizations:
   statement in the specs or code, or left git failed merge markup
 * a [Consular](https://github.com/achiu/consular) script is automatically
   created if Consular is used on the machine
+* logs are automatically rotated to save disk space
 
 ### For testing
 * [rspec-rails](https://github.com/rspec/rspec-rails), with generators only for models and requests specs
 * [capybara](https://github.com/jnicklas/capybara) for integration tests
 * [spork](https://github.com/sporkrb/spork) to avoid rails initialization on each test suite run
 * [growl-rspec](https://github.com/dpree/growl-rspec) to see RSpec test results in growl notifications
+* logs are automatically rotated to save disk space

@@ -1,10 +1,11 @@
-
 Rails Blank App
 ===
 
 This app contains just the minimum configuration needed to start coding right
 away on the things that matter. It's easier for me to maintain than a rails
 template.
+
+**I no longer maintain this project, see [rails4_blank_app](https://github.com/Florent2/rails4_blank_app) for the successor.**
 
 Thanks
 ---
